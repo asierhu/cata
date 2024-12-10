@@ -111,7 +111,7 @@ describe("Gilded Rose", () => {
   describe("Sulfuras, Hand of Ragnaros", () => {
     test("'Sulfuras, Hand of Ragnaros' should not deacrease quality", () => {
       // Arrange
-      const items = [new Item("Sulfuras, Hand of Ragnaros", 10, 10)];
+      const items = [new Item("Sulfuras, Hand of Ragnaros", 10, 80)];
       const gildedRose = new GildedRose(items);
       
       // Act
@@ -120,7 +120,7 @@ describe("Gilded Rose", () => {
       // Assert
       expect(items[0].name).toBe("Sulfuras, Hand of Ragnaros");
       expect(items[0].sellIn).toBe(10);
-      expect(items[0].quality).toBe(10);
+      expect(items[0].quality).toBe(80);
     });
   });
 
